@@ -1,5 +1,8 @@
 filetype plugin indent on
 
+" shortcut to save file as root
+command! -nargs=0 w!! w !sudo tee % > /dev/null
+
 " set tab to be 4 spaces
 set tabstop=4
 " when indenting with '>", use 4 space width
